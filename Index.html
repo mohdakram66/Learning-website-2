@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Tools Learn - Free Calculator, Converter, Guides | Hindi Tutorials</title>
+    <meta name="description" content="फ्री ऑनलाइन कैलकुलेटर, यूनिट कन्वर्टर, फॉर्म टूल्स। स्टेप-बाय-स्टेप HTML CSS JS गाइड्स हिंदी में। AdSense approved content।">
+    <meta name="keywords" content="calculator hindi, unit converter, web development tutorial hindi, free tools">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Easy Tools Learn">
+    <meta property="og:description" content="Best free tools and Hindi tutorials">
+    <meta property="og:type" content="website">
+    <!-- Schema -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Easy Tools Learn","url":"https://easytolstools.netlify.app/"}</script>
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR-ID" crossorigin="anonymous"></script>
+    <style>
+        :root{--primary:#2563eb;--bg:#f8fafc;--card:#fff;--text:#0f172a;--shadow:0 10px 25px rgba(0,0,0,0.1);}
+        *{margin:0;box-sizing:border-box;font-family:'Segoe UI',system-ui,sans-serif;line-height:1.6;}
+        body{background:var(--bg);color:var(--text);}header{background:linear-gradient(135deg,var(--primary),#1d4ed8);color:white;padding:1rem 0;position:sticky;top:0;z-index:100;box-shadow:var(--shadow);}
+        nav{max-width:1200px;margin:auto;padding:0 1rem;display:flex;justify-content:space-between;align-items:center;}
+        .logo{font-size:1.8rem;font-weight:700;}.nav-links{display:flex;gap:2rem;list-style:none;}
+        .nav-links a{color:white;text-decoration:none;font-weight:500;transition:opacity 0.3s;}nav a:hover{opacity:0.8;}
+        .hamburger{display:none;cursor:pointer;}
+        main{max-width:1200px;margin:auto;padding:1rem;}.hero{padding:3rem 1rem;text-align:center;background:var(--card);border-radius:20px;margin:1rem 0;box-shadow:var(--shadow);}
+        h1{font-size:2.5rem;margin-bottom:1rem;}h2{font-size:1.8rem;color:var(--primary);margin:2rem 0 1rem;}
+        .tools-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem;margin:2rem 0;}
+        .card{padding:2rem;border-radius:16px;background:var(--card);box-shadow:var(--shadow);transition:transform 0.3s;}
+        .card:hover{transform:translateY(-10px);}.btn{padding:12px 24px;background:var(--primary);color:white;border:none;border-radius:8px;cursor:pointer;font-size:1rem;transition:background 0.3s;}
+        .btn:hover{background:#1d4ed8;}
+        #calc-grid,#conv-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:400px;margin:1rem auto;}
+        #display{font-size:24px;padding:20px;grid-column:span 4;background:#f1f5f9;border-radius:12px;text-align:right;}
+        button{padding:15px;border-radius:8px;border:none;background:#e2e8f0;font-weight:600;cursor:pointer;transition:all 0.2s;}button:hover{background:var(--primary);color:white;}
+        input,select{padding:12px;border:1px solid #d1d5db;border-radius:8px;font-size:16px;width:100%;}
+        .blog-preview{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;}
+        .blog-card .excerpt{max-height:100px;overflow:hidden;}
+        footer{background:var(--text);color:white;padding:2rem 1rem;text-align:center;margin-top:3rem;}
+        @media(max-width:768px){.nav-links{position:fixed;left:-100%;top:80px;background:white;width:100%;flex-direction:column;padding:2rem;box-shadow:var(--shadow);}.nav-links.active{left:0;}
+        .hamburger{display:flex;flex-direction:column;gap:5px;}.bar{width:25px;height:3px;background:white;}.hero h1{font-size:2rem;}}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">📐 Easy Tools Learn</div>
+            <ul class="nav-links" id="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#learn">Learn</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="menuBtn">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="hero">
+            <h1>फ्री टूल्स + हिंदी ट्यूटोरियल्स</h1>
+            <p>ऑनलाइन कैलकुलेटर, कन्वर्टर, फॉर्म बिल्डर। HTML CSS JavaScript स्टेप-बाय-स्टेप गाइड्स। 100% फ्री!</p>
+            <button class="btn" onclick="scrollTo('tools')">टूल्स आज़माएं</button>
+        </section>
+
+        <section id="tools">
+            <h2>🛠️ फ्री ऑनलाइन टूल्स</h2>
+            <div class="tools-grid">
+                <div class="card">
+                    <h3>साइंटिफिक कैलकुलेटर</h3>
+                    <div id="calc-grid">
+                        <div id="display">0</div>
+                        <button onclick="calc('C')">C</button><button onclick="calc('⌫')">⌫</button><button onclick="calc('/')">/</button><button onclick="calc('*')">×</button>
+                        <button onclick="calc('7')">7</button><button onclick="calc('8')">8</button><button onclick="calc('9')">9</button><button onclick="calc('-')">-</button>
+                        <button onclick="calc('4')">4</button><button onclick="calc('5')">5</button><button onclick="calc('6')">6</button><button onclick="calc('+')">+</button>
+                        <button onclick="calc('1')">1</button><button onclick="calc('2')">2</button><button onclick="calc('3')">3</button><button onclick="calc('=')">=</button>
+                        <button onclick="calc('0')" style="grid-column:span 2;">0</button><button onclick="calc('.')">.</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>यूनिट कन्वर्टर</h3>
+                    <select id="from"><option>मिलीमीटर</option><option>सेंटीमीटर</option><option>मीटर</option><option>किलोमीटर</option></select>
+                    <input type="number" id="val" placeholder="मान डालें" oninput="convert()">
+                    <select id="to"><option>इंच</option><option>फुट</option><option>यार्ड</option><option>मील</option></select>
+                    <div id="convResult" style="font-size:24px;font-weight:bold;color:var(--primary);margin-top:1rem;">परिणाम यहाँ</div>
+                </div>
+                <div class="card">
+                    <h3>ईमेल वैलिडेटर</h3>
+                    <input type="email" id="emailInput" placeholder="example@email.com">
+                    <button class="btn" onclick="validateEmail()">चेक करें</button>
+                    <p id="emailResult"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="learn">
+            <h2>📚 स्टेप बाय स्टेप गाइड्स</h2>
+            <div class="blog-preview">
+                <div class="card">
+                    <h3>HTML Responsive Navbar कैसे बनाएं</h3>
+                    <p class="excerpt">मोबाइल फर्स्ट hamburger menu के साथ professional navbar। Full code + demo।</p>
+                    <a href="blog.html#navbar" class="btn">पढ़ें →</a>
+                </div>
+                <div class="card">
+                    <h3>CSS Grid vs Flexbox</h3>
+                    <p class="excerpt">कौन सा बेहतर? Layout examples के साथ comparison।</p>
+                    <a href="blog.html#grid" class="btn">पढ़ें →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" style="text-align:center;padding:3rem 1rem;background:var(--card);border-radius:20px;">
+            <h2>हमसे संपर्क करें</h2>
+            <p>सवाल? <a href="mailto:akram.webstudio@gmail.com">akram.webstudio@gmail.com</a> | WhatsApp: <a href="https://wa.me/916006587500">6006587500</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Easy Tools Learn. सभी अधिकार सुरक्षित। | <a href="privacy.html">प्राइवेसी पॉलिसी</a> | <a href="terms.html">शर्तें</a> | <a href="about.html">हमारे बारे में</a></p>
+    </footer>
+
+    <script>
+        // Mobile Menu
+        document.getElementById('menuBtn').onclick=()=>{document.getElementById('nav').classList.toggle('active');};
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(a=>a.onclick=e=>{e.preventDefault();document.querySelector(a.href).scrollIntoView({behavior:'smooth'});});
+        
+        // Calculator
+        let calcDisplay='0',op='',prev='';
+        function calc(v){const d=document.getElementById('display');
+            if(v==='C'){calcDisplay='0';op='';prev='';}
+            else if(v==='⌫'){calcDisplay=calcDisplay.slice(0,-1)||'0';}
+            else if(v==='='){calcDisplay=eval(prev+op+calcDisplay)||'Error';op=prev='';}
+            else if(['+','-','*','/'].includes(v)){op=v;prev=calcDisplay;calcDisplay='0';}
+            else calcDisplay+=(calcDisplay==='0'?'':calcDisplay)+v.replace('×','*');
+            d.textContent=calcDisplay;
+        }
+        
+        // Converter (Length mm to inch etc.)
+        function convert(){
+            const froms={'मिलीमीटर':1,'सेंटीमीटर':10,'मीटर':1000,'किलोमीटर':1000000},
+            tos={'इंच':25.4,'फुट':304.8,'यार्ड':914.4,'मील':1609344},
+            v=document.getElementById('val').value;
+            if(v) document.getElementById('convResult').textContent=(v*froms[document.getElementById('from').value]/tos[document.getElementById('to').value]).toFixed(2);
+        }
+        
+        // Email Validator
+        function validateEmail(){
+            const email=document.getElementById('emailInput').value,
+            result=document.getElementById('emailResult');
+            result.textContent=email.match(/^[^s@]+@[^s@]+.[^s@]+$/) ? '✅ वैलिड ईमेल!' : '❌ इनवैलिड!';
+            result.style.color=result.textContent.includes('✅') ? 'green' : 'red';
+        }
+    </script>
+</body>
+  </html>
